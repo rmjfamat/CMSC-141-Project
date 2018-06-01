@@ -66,6 +66,8 @@ public class Evenbs {
                     halting_state = accept_state;
                 }else if(previous_state == 0 && current_state == 1){
                     halting_state = reject_state;
+                }else if(previous_state == 0 && current_state == 0){
+                    halting_state = accept_state;
                 }
             }
 
