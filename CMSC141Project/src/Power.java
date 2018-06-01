@@ -19,8 +19,8 @@ public class Power {
             inputTape[i] = 'b';
         }
 
-        for (char c : inputTape) {
-            System.out.print(c + " ");
+        for (int j = 0; j < displayTape; j++) {
+            System.out.print(inputTape[j] + " ");
         }
         System.out.println();
     }
@@ -290,7 +290,12 @@ public class Power {
                     System.out.print(inputTape[i] + " ");
                 }
             }
-            System.out.println("Current State: " + origState + " | Next State: " + state + " | Read: " + origC + " | Write: " + c);
+            System.out.print("Current State: " + origState + " | Next State: " + state + " | " + origC + " ; " + c + ", ");
+            if (right) {
+                System.out.println("R");
+            } else {
+                System.out.println("L");
+            }
         }
     }
 }
